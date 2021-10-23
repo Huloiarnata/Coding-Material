@@ -1,0 +1,9 @@
+C language is a procedural language , ie dividing huge program into smaller set of program called procedures/functions.
+
+Features of C language are :-
+1) Portability
+2) Its a middle-level language. 
+3) It offers direct access to memory through pointers
+4) Bit manipulation through bit wise operators.
+5) writting assembly code in C language.
+6) Wide variety of built in functions.

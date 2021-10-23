@@ -1,0 +1,10 @@
+variables => names which point to a memory location
+In C lang we have to anounce/declare properties of the variables to the compiler.
+data type => how much space a variable is going to occupy in the memory
+
+    int<data_type of the variable> var<name of the variable>;
+
+Initialization => Assigning value at the time of declaration itself is called initialization
+
+    int number = 0;
+

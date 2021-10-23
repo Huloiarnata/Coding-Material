@@ -1,0 +1,7 @@
+#include<stdio.h> => preprocessor directive - It replaces text starting with # with actual content before compilation.
+                  => stdio.h - It's the standard input output header file. 
+                  
+void main()  => Compiler looks for the main function, it is basically the entry point of code
+{
+    printf("HELLO !!"); => printing function defined in stdio.h
+}

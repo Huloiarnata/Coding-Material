@@ -1,0 +1,32 @@
+1 Byte = 8 bits
+
+Range => upper & lower limit of some data.
+Binary number system:
+      base 2 number system, understandable by machine. Range(0,1)
+      for a 4 bit data 
+       range(0000<0>,1111<15>)
+       math to get decimal integer out of binary number:-
+          1101 => 2^3 2^2 2^1 2^0
+                   1   1  0   1
+
+                   2^3(1)+2^2(1)+2^1(0)+2^0(1)= 8+4+0+1 = 13
+
+                   formula: (2^n-1)
+                                eg- 2^4-1=15
+
+Integer constant can be written in three different system:
+1) decimal integer constant:
+      base 10 number system range(0,9). first digit must be something other than 0.
+2) octal integer constant:
+      consist of any combination of digits taken from the set 0 through 7. 
+      However the first digit must be 0, in order to identify the constant as an octal number.
+3) hexadecimal constant:
+      must begin with either 0x or 0X. It can then be followed by any combination of digits 
+      taken from the sets 0 through 9 and a through f (or A through F).
+
+For range of Integer system we can get range for signed and unsigned integer:
+   signed integer: They can hold positive as well as negative value
+                    Range is calculated through 2's complement of binary system which is:
+                       -(2^(n-1)) to +(2^(n-1)-1)
+   unsigned integer: They can never hold negative integer value
+                     Range is calculated through (2^n-1) ; n being bits.
