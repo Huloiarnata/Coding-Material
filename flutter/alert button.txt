@@ -1,0 +1,24 @@
+      showAlertDialoge(BuildContext context) {
+        Widget okButton = TextButton(
+          child: Text("OK"),
+          onPressed: () {},
+        );
+        AlertDialog alert = AlertDialog(
+          title: const Text("Your Calculated BMI is :"),
+          content: Text("BMI = ${_BMI}"),
+          actions: [
+            okButton,
+          ],
+        );
+        showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return alert;
+            });
+      }
+
+      showAlertDialoge(context);
+    });
+// sha-1 78:25:c3:f5:02:ee:13:0c:26:f2:54:2d:4b:1b:cb:67:3b:41:b4:ee
+// sha-256 d5:9d:c6:7d:f9:34:39:72:40:82:13:31:f3:82:0d:6e:e2:d1:6b:e2:f0:b6:56:7a:6c:a8:6f:2c:bb:02:18:93
+// app id 1:291140409391:android:ebc5b94bcd6b5b2cf68eda com.example.sunshine
