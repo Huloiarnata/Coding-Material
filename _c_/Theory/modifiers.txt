@@ -8,4 +8,5 @@ for integers modifiers are:
 =>short and long allows integer to take less and more memory than int but this is not guarented
      sizeof(short int)<=sizeof(int)<=sizeof(long int)
 => signed integer: When declaring integer by default the value is to be signed integer.
-   unsigned integer: To declare and integer which will take only unsigned integer 
+   unsigned integer: To declare and integer which will take only positive integer we use-
+                     unsigned int <variable-name>;
