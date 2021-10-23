@@ -1,0 +1,17 @@
+what happens when we exceed the valid range of the data type? [*****UNSIGNED DATA*****]
+
+To understand this concept we will use sizeof(unsigned integer) which on my machine is 4 byte = 32bit.
+this will give us maximum limit of range = 4294967295 {got by the formula ((2^n)-1)} and lower limit =0 as it's for
+an unsigned integer.
+now when we will exceed this upper limit by 1 we will get 0 and subsequently 1,2,3,......,4294967295 if we increment 
+each time by 1.
+By last permutation which will give maximum limit the 32nd bit & every other bit before it will hold 1 , 
+so we will have to go beyond that the 33rd bit will have to take a value 1 & which will
+then setting every other bit to zero. But as the arrangement is for 32 bit only and somehow we force the 33rd bit to 
+hold 1 it will exclude it and read till 32 bit only which will be set to 0's ie giving us 0 .
+
+This can be understood mathematically by the mod function:
+   mod(upper limit)/mod((2^n-1)) where n is bits
+   eg in 4byte there are 32 bits
+   so we will get <number> MOD 15 ->(decimal integer out of binary) 
+
