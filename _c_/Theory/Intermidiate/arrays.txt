@@ -1,0 +1,40 @@
+Array => It's a data stucture containing a number of data types which are all of same types.
+
+One Dimension Array :-
+- Declaring and defining of one dimension Array.
+    - syntax=> data_type<array name>[number of elements in the array];
+    - the above syntax will also define the array, the compilerwill allocate contigious block 
+      of memory of size [num of elements]*sizeof(<datatype>).
+    - The length of the array can only be specified by an POSITIVE INTEGER.
+    - Always specify the length of the array using macro. This is because if we are going without it 
+      then while changing array length we have to change length of the array in every code but 
+      with macro we just have to change while declaring macro and the rest will be taken care of.
+- Accessing elements from one dimension arrays.
+    - syntax array_name[index]
+    - 0 to (length-1)
+- Initializing one dimension arrays.
+    - METHOD-1 (Not preffered)
+         - arr[5]={1,2,3,4,5};
+    - METHOD-2
+         - arr[]={1,2,3,4,5,6,7,8,9};
+    - METHOD-3 (Not preffered)
+         - int arr[3];
+           arr[0]=1;
+           arr[1]=5;
+           arr[2]=7;
+    - METHOD-4
+         - int arr[5];
+           for(int i=0;i<5;i++){
+               scanf("%d",arr[i]);
+           }
+- Designated Initialization in one dimension array.
+    - for int a[5]={1,0,3,0,0};
+      we can declare it like:
+        int a[5]={[0]=1,[2]=3}; // each element in sq bracket is called designator.
+    - for int a[]={[0]=12,[4]=2,[2]=56,[56]=185};
+        The compiler will deduce the length of the array by largest designator in the list which here is 56.
+    - if the index is already acquired by some value and also declared by the designator 
+      then designator value will be th final value.
+- if the number of elements are less than the number declared then rest of the indeces take value '0'.
+- It's illegal to put more elementsthan declared.
+- {} this can't be empty it's illegal one element has to be there.
