@@ -38,3 +38,6 @@ One Dimension Array :-
 - if the number of elements are less than the number declared then rest of the indeces take value '0'.
 - It's illegal to put more elementsthan declared.
 - {} this can't be empty it's illegal one element has to be there.
+
+
+Two Dimensional Array :-
