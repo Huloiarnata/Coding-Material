@@ -39,5 +39,7 @@ One Dimension Array :-
 - It's illegal to put more elementsthan declared.
 - {} this can't be empty it's illegal one element has to be there.
 
-
+Multidimensional array- array of arrays
 Two Dimensional Array :-
+- Declaring and defining of one dimension Array.
+    - syntax=> data_type<array name>[number of elements in the array row][number of elements in the array column];
