@@ -1,0 +1,17 @@
+Pointer 
+        -- Is a variable that stores memory address.
+        -- It is called a pointer because it point towards a memory location.
+        -- The pointer has to be declared with a name and data type as it also occupies some memory.
+Declaration 
+        --  data type *pointer_name;
+        -- * this tell the compiler that the variable declared is a pointer.
+        --  here datatype refer to the base type of the pointer or the type the pointer is pointing at.
+        -- almost all pointers occupy same space size.
+Assigning address
+        -- Global and local static variable are automatically inistialised to null.
+        -- automatic pointer holds garbage value.
+        -- we can assign null to a pointer of any type this prevents from the pointer pointing toward 
+           random memory location.
+Derefrencing Pointer variable
+        -- %p is the format specifier for printing address.
+        
